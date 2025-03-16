@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="MuTT: A Multimodal Trajectory Transformer for Robot Skills.">
+    <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bresa: Bio-inspired Reflexive Safe Reinforcement Learning
+        for Contact-Rich Robotic Tasks</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+    <link rel="stylesheet" href="./static/css/bulma.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+    <link rel="icon" href="./static/images/favicon.svg">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-markdown.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script src="./static/js/bulma-slider.min.js"></script>
+    <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div class="navbar-menu">
+            <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+                <a class="navbar-item" href="https://claudiuskienle.de">
+                    <span class="icon">
+                        <i class="fas fa-home"></i>
+                    </span>
+                </a>
+
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        More Research
+                    </a>
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item" href="https://ieeexplore.ieee.org/document/10517611">
+                           SRL-VIC
+                        </a>
+                        <a class="navbar-item" href="https://arxiv.org/abs/2503.00287">
+                            PassiveRL
+                        </a>
+                        <a class="navbar-item" href="https://github.com/jack-sherman01/Awesome-Learning4Safe-Contact-rich-tasks">
+                            Learning for Safe contact
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered">
+                    <div class="column has-text-centered">
+                        <h1 class="title is-1 publication-title">Bresa: Bio-inspired Reflexive Safe Reinforcement Learning
+                            for Contact-Rich Robotic Tasks
+                        </h1>
+                        <div class="is-size-5 publication-authors">
+                            <span class="author-block">
+                                <!-- &dagger; -->
+                                <a href="https://www.ias.informatik.tu-darmstadt.de/Team/ClaudiusKienle">Heng Zhang</a>
+                                <sup>1,2*,</sup>,</span>
+                            <span class="author-block">
+                                <a href="https://scholar.google.com/citations?hl=en&user=yuOV2TQAAAAJ&view_op=list_works&sortby=pubdate">Gokhan Solak</a>
+                                <sup>1*,</sup>,</span>
+                            <span class="author-block">
+                                <a href="https://www.iit.it/it/people-details/-/people/arash-ajoudani">Arash Ajoudani</a><sup>1,</sup>,
+                            </span>                           
+                        </div>
+
+                        <div class="is-size-5 publication-authors">
+                            <span class="author-block"></sup>*</sup> Equal contribution</span> 
+                            <span class="author-block"><sup>1</sup>Human-Robot Interfaces and Interaction Lab, Istituto Italiano di Tec-
+                                nologia, Genoa, Italy</span>
+                            <span class="author-block"><sup>2</sup>Ph.D. program of national interest in Robotics and Intelligent Machines (DRIM) </span>
+                            <span class="author-block">and Universit`a di Genova, Genoa, Italy.</span>                    
+                            <span class="author-block">This work was supported part by : European Union’s Horizon 
+                                (grant agreement No. ).</span>                       
+                        </div>
+
+                        <div class="column has-text-centered">
+                            <div class="publication-links">
+                                <!-- PDF Link. -->
+                                <span class="link-block">
+                                    <a href="http://arxiv.org/pdf/"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fas fa-file-pdf"></i>
+                                        </span>
+                                        <span>Paper</span>
+                                    </a>
+                                </span>
+                                <span class="link-block">
+                                    <a href="http://arxiv.org/abs/"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="ai ai-arxiv"></i>
+                                        </span>
+                                        <span>arXiv</span>
+                                    </a>
+                                </span>
+                                <!-- Video Link. -->
+                                <span class="link-block">
+                                    <a href="https://youtu.be/"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fab fa-youtube"></i>
+                                        </span>
+                                        <span>Video</span>
+                                    </a>
+                                </span>
+                                <!-- Code Link. -->
+                                <span class="link-block">
+                                    <a href="  "
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fas fa-code"></i>
+                                        </span>
+                                        <span>Code (coming soon)
+                                        </span>
+                                </a>
+                                </span>
+
+                                
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero teaser">
+        <div class="container is-max-desktop">
+            <div class="hero-body" style="justify-items: center;">
+                <img id="teaser" src="./static/images/framework.jpg" />
+                <div class="content has-text-justified">
+                    (a) Bresa framework. The RL agent operates at the decision
+                    loop, planning the high-level action a that is executed by the
+                    trajectory controller. The controller operates at the high-frequency
+                    control loop, executing the low-level action ˆa based on the state
+                    feedback ˆs at each control step. The reflex mechanism gives the
+                    system a quick reaction capability by interrupting the control loop
+                    in the case of high risk. 
+                    (b) A simplified illustration of the human
+                    central nervous system. While high-level decisions are made in
+                    the brain, safety-related reflexes are managed by the spinal cord,
+                    allowing for faster responses that override slower, more complex
+                    decision-making processes.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container is-max-desktop">
+            <!-- Abstract. -->
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Abstract</h2>
+                    <div class="content has-text-justified">
+                        <p>
+                            Ensuring safety in rein-
+forcement learning (RL)-based robotic systems is a critical
+challenge, especially in contact-rich tasks within unstructured
+environments. While the state-of-the-art safe RL approaches
+mitigate risks through safe exploration or high-level recovery
+mechanisms, they often overlook low-level execution safety,
+where reflexive responses to potential hazards are crucial.
+Similarly, variable impedance control (VIC) enhances safety
+by adjusting stiffness, yet lacks a systematic way to adapt
+parameters throughout the task. In this paper, we propose
+Bresa, a Bio-inspired Reflexive Hierarchical Safe RL method
+inspired by biological reflexes. Our method decouples task
+learning from safety learning, incorporating a safety critic
+network that evaluates action risks and operates at a higher
+frequency than the task solver. Unlike existing recovery-based
+methods, our safety critic functions at the low-level control
+layer, allowing real-time intervention when unsafe conditions
+arise. The task-solving RL policy, running at a lower frequency,
+focuses on high-level planning (decision-making), while the
+safety critic ensures instantaneous safety corrections.
+                        </p>
+                        <p>
+                            We validate Bresa on multi tasks including a contact-rich
+robotic task, demonstrating its ability to enhance safety reflex-
+ively, and adaptability in unforeseen dynamic environments.
+Our results show that Bresa outperforms baseline, providing
+a robust and reflexive safety mechanism that bridges the gap
+between high-level planning and low-level execution. We show
+our real-world experiments video as below.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--/ Abstract. -->
+        </div>
+    </section>
+    <section>
+        <div class="container is-max-desktop">
+
+            <!-- Paper video. -->
+            <div class="columns is-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Video about Experiments , will update soon</h2>
+                    <div class="publication-video">
+                        <iframe src="https://www.youtube.com/watch?v=ksWXR3vByoQ" frameborder="0"
+                            allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="columns is-centered" style="margin-top: 40px;">
+                <div class="column is-12">
+                    <h2 class="title is-3">Reflexive Safe RL for Contact-Rich Robotic Tasks</h2>
+                    <img id="teaser" src="./static/images/method.jpg" />
+                    <p>
+                        (a) Reflex mechanism on an obstacle avoidance scenario. Even when the high-level state-action pair (s, a) is evaluated to be safe,
+                        an intermediate state-action pair (ˆs, ˆa) may entail high risk (ϵrisk > ϵsafe) and trigger the reflex mechanism. (b) Flowchart of the Bresa
+                        algorithm. We color-coded the decision loop, control loop and reflex for comparison to Fig. 1.a. We reuse s instead of showing ˆs to
+                        simplify the structure, however, they are equivalent in the control loop. (c) Maze exploration environment in the Mujoco simulator.
+                    </p>
+                </div>
+            </div>
+            <!--/ Paper video. -->
+        </div>
+    </section>
+
+
+    <section class="section" id="BibTeX">
+        <div class="container is-max-desktop content">
+            <h2 class="title">BibTeX</h2>
+            <pre><code>@ARTICLE{10517611,
+                author={Zhang, Heng and Solak, Gokhan and Lahr, Gustavo J. G. and Ajoudani, Arash},
+                journal={IEEE Robotics and Automation Letters}, 
+                title={SRL-VIC: A Variable Stiffness-Based Safe Reinforcement Learning for Contact-Rich Robotic Tasks}, 
+                year={2024},
+                volume={9},
+                number={6},
+                pages={5631-5638},
+                doi={10.1109/LRA.2024.3396368}}
+              
+</code></pre>
+        </div>
+    </section>
+
+    <section class="section" id="BibTeX">
+        <div class="container is-max-desktop content">
+            <h2 class="title">Acknowledgement</h2>
+            <p>
+                This work was supported by the xx.
+            </p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-8">
+                    <div class="content">
+                        <p>
+                            This website is licensed under a <a rel="license"
+                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+                                Commons Attribution-ShareAlike 4.0 International License</a>.
+                        </p>
+                        <p>
+                            This means you are free to borrow the <a
+                                href="https://github.com/claudius-kienle/AppMuTT">source code</a> of this website,
+                            we just ask that you link back to this page in the footer.
+                            Please remember to remove the analytics code included in the header of the website which
+                            you do not want on your website.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
